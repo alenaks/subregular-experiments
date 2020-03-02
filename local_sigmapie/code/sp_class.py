@@ -195,7 +195,8 @@ class SP(L):
                 else:
                     useless_loops = 0
 
-                if safe and useless_loops > 100:
+                # increased the # of the useless loops!
+                if safe and useless_loops > 1000:
                     print("The grammar cannot produce the requested number"
                           " of strings.")
                     break
